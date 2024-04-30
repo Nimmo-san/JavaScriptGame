@@ -1,0 +1,37 @@
+<head>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  </style>
+</head>
+
+<body>
+  <div style="position: relative; display: inline-block;">
+    <div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px">
+
+      <!-- P-HP -->
+      <div style=" display: flex; position: relative; height: 20px; width: 100%; justify-content: flex-end;">
+        <div style="background-color: red; height: 20px; width: 100%"></div>
+        <div id="P-HP" style="position: absolute; background-color: blue; top: 0; bottom: 0; right: 0; width: 100%"></div>
+      </div>
+
+      <!-- Timer -->
+      <div id="timer"style="display: flex; background-color: yellow; height: 50px; width: 50px; flex-shrink: 0; align-items: center; justify-content: center;"> 10 </div>
+
+      <!-- E-HP parent div -->
+      <div style="position: relative; height: 20px; width: 100%">
+        <div style="background-color: red; height: 20px; "></div>
+        <div id="E-HP" style="position: absolute; background-color: blue; top: 0; bottom: 0; right: 0; left: 0;"></div>
+      </div>
+
+    </div>
+    <div id="displayDRAW" style=" display: none; position: absolute; color: black; align-items: center; justify-content: center; top: 0; bottom: 0; left: 0; right: 0;">
+      DRAW!
+    </div>
+    <canvas></canvas>
+  </div>
+  <script src="utils.js"></script>
+  <script src="SpriteClass.js"></script>
+  <script src="index.js"></script>
+</body>
